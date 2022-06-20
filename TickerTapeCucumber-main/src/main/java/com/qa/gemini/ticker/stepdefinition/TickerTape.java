@@ -41,7 +41,7 @@ public class TickerTape {
     public void show_the_analytic_for_one_day() throws IOException {
         DriverAction.setScriptTimeOut(10);
         DriverAction.setImplicitTimeOut(10);
-        DriverAction.setScriptTimeOut(10);
+        DriverAction.setPageLoadTimeOut(10);
         String heading = DriverAction.getElementText(loacators.heading);
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
@@ -68,7 +68,7 @@ public class TickerTape {
     public void show_the_analytic_for_one_week() throws IOException {
         DriverAction.setScriptTimeOut(10);
         DriverAction.setImplicitTimeOut(10);
-        DriverAction.setScriptTimeOut(10);
+        DriverAction.setPageLoadTimeOut(10);
         DriverAction.click(loacators.week, "Click on 1w");
         DriverAction.waitSec(5);
         String heading = DriverAction.getElementText(loacators.heading);
@@ -97,7 +97,7 @@ public class TickerTape {
     public void show_the_analytic_for_one_month() throws IOException {
         DriverAction.setScriptTimeOut(10);
         DriverAction.setImplicitTimeOut(10);
-        DriverAction.setScriptTimeOut(10);
+        DriverAction.setPageLoadTimeOut(10);
         DriverAction.click(loacators.mo, "Click on 1M");
         DriverAction.waitSec(5);
         String heading = DriverAction.getElementText(loacators.heading);
@@ -126,7 +126,7 @@ public class TickerTape {
     public void show_the_analytic_for_one_year() throws IOException {
         DriverAction.setScriptTimeOut(10);
         DriverAction.setImplicitTimeOut(10);
-        DriverAction.setScriptTimeOut(10);
+        DriverAction.setPageLoadTimeOut(10);
         DriverAction.click(loacators.year, "Click on 1y");
         DriverAction.waitSec(5);
         String heading = DriverAction.getElementText(loacators.heading);
@@ -155,7 +155,7 @@ public class TickerTape {
     public void show_the_analytic_for_five_year() throws IOException {
         DriverAction.setScriptTimeOut(10);
         DriverAction.setImplicitTimeOut(10);
-        DriverAction.setScriptTimeOut(10);
+        DriverAction.setPageLoadTimeOut(10);
         DriverAction.click(loacators.year5, "Click on 5y");
         DriverAction.waitSec(5);
         String heading = DriverAction.getElementText(loacators.heading);
