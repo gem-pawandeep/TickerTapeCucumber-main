@@ -46,22 +46,22 @@ public class TickerTape {
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
         String change1 = DriverAction.getElementText(loacators.change);
-        String value=DriverAction.getCSSValue(loacators.change,"color");
-        String color=String.valueOf(Color.fromString(value).asHex());
+        String value = DriverAction.getCSSValue(loacators.change, "color");
+        String color = String.valueOf(Color.fromString(value).asHex());
         String high = high1.substring(1);
         String low = low1.substring(1);
         String change = change1.substring(0);
-        String red= "#d82f44";
-        String green= "#19af55";
-        if(color.equals(green)){
+        String red = "#d82f44";
+        String green = "#19af55";
+        if (color.equals(green)) {
             System.out.print("Insights of " + heading + "for 1 day" + "\nHigh " + high + "\nLow " + low + "\nChange +" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 day", "High " + high + "<br>Low " + low + "<br>Change +" + change, STATUS.PASS, DriverAction.takeSnapShot());
 
-        }else if(color.equals(red)){
+        } else if (color.equals(red)) {
             System.out.print("Insights of " + heading + "for 1 day" + "\nHigh " + high + "\nLow " + low + "\nChange -" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 day", "High " + high + "<br>Low " + low + "<br>Change -" + change, STATUS.PASS, DriverAction.takeSnapShot());
         }
-        DriverAction.waitSec(5);
+        DriverAction.waitSec(20);
     }
 
     @Then("Show the analytic for one Week")
@@ -75,22 +75,22 @@ public class TickerTape {
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
         String change1 = DriverAction.getElementText(loacators.change);
-        String value=DriverAction.getCSSValue(loacators.change,"color");
-        String color=String.valueOf(Color.fromString(value).asHex());
+        String value = DriverAction.getCSSValue(loacators.change, "color");
+        String color = String.valueOf(Color.fromString(value).asHex());
         String high = high1.substring(1);
         String low = low1.substring(1);
         String change = change1.substring(0);
-        String red= "#d82f44";
-        String green= "#19af55";
-        if(color.equals(green)){
+        String red = "#d82f44";
+        String green = "#19af55";
+        if (color.equals(green)) {
             System.out.print("Insights of " + heading + "for 1 Week" + "\nHigh " + high + "\nLow " + low + "\nChange +" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 Week", "High " + high + "<br>Low " + low + "<br>Change +" + change, STATUS.PASS, DriverAction.takeSnapShot());
 
-        }else if(color.equals(red)){
+        } else if (color.equals(red)) {
             System.out.print("Insights of " + heading + "for 1 Week" + "\nHigh " + high + "\nLow " + low + "\nChange -" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 Week ", "High " + high + "<br>Low " + low + "<br>Change -" + change, STATUS.PASS, DriverAction.takeSnapShot());
         }
-         DriverAction.waitSec(5);
+        DriverAction.waitSec(20);
     }
 
     @Then("Show the analytic for one Month")
@@ -104,18 +104,18 @@ public class TickerTape {
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
         String change1 = DriverAction.getElementText(loacators.change);
-        String value=DriverAction.getCSSValue(loacators.change,"color");
-        String color=String.valueOf(Color.fromString(value).asHex());
+        String value = DriverAction.getCSSValue(loacators.change, "color");
+        String color = String.valueOf(Color.fromString(value).asHex());
         String high = high1.substring(1);
         String low = low1.substring(1);
         String change = change1.substring(0);
-        String red= "#d82f44";
-        String green= "#19af55";
-        if(color.equals(green)){
+        String red = "#d82f44";
+        String green = "#19af55";
+        if (color.equals(green)) {
             System.out.print("Insights of " + heading + "for 1 Month" + "\nHigh " + high + "\nLow " + low + "\nChange +" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 Month", "High " + high + "<br>Low " + low + "<br>Change +" + change, STATUS.PASS, DriverAction.takeSnapShot());
 
-        }else if(color.equals(red)){
+        } else if (color.equals(red)) {
             System.out.print("Insights of " + heading + "for 1 Month" + "\nHigh " + high + "\nLow " + low + "\nChange -" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 Month", "High " + high + "<br>Low " + low + "<br>Change -" + change, STATUS.PASS, DriverAction.takeSnapShot());
         }
@@ -133,18 +133,18 @@ public class TickerTape {
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
         String change1 = DriverAction.getElementText(loacators.change);
-        String value=DriverAction.getCSSValue(loacators.change,"color");
-        String color=String.valueOf(Color.fromString(value).asHex());
+        String value = DriverAction.getCSSValue(loacators.change, "color");
+        String color = String.valueOf(Color.fromString(value).asHex());
         String high = high1.substring(1);
         String low = low1.substring(1);
         String change = change1.substring(0);
-        String red= "#d82f44";
-        String green= "#19af55";
-        if(color.equals(green)){
+        String red = "#d82f44";
+        String green = "#19af55";
+        if (color.equals(green)) {
             System.out.print("Insights of " + heading + "for 1 Year" + "\nHigh " + high + "\nLow " + low + "\nChange +" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 Year", "High " + high + "<br>Low " + low + "<br>Change +" + change, STATUS.PASS, DriverAction.takeSnapShot());
 
-        }else if(color.equals(red)){
+        } else if (color.equals(red)) {
             System.out.print("Insights of " + heading + "for 1 Year" + "\nHigh " + high + "\nLow " + low + "\nChange -" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 1 year", "High " + high + "<br>Low " + low + "<br>Change -" + change, STATUS.PASS, DriverAction.takeSnapShot());
         }
@@ -162,18 +162,18 @@ public class TickerTape {
         String high1 = DriverAction.getElementText(loacators.high);
         String low1 = DriverAction.getElementText(loacators.low);
         String change1 = DriverAction.getElementText(loacators.change);
-        String value=DriverAction.getCSSValue(loacators.change,"color");
-        String color=String.valueOf(Color.fromString(value).asHex());
+        String value = DriverAction.getCSSValue(loacators.change, "color");
+        String color = String.valueOf(Color.fromString(value).asHex());
         String high = high1.substring(1);
         String low = low1.substring(1);
         String change = change1.substring(0);
-        String red= "#d82f44";
-        String green= "#19af55";
-        if(color.equals(green)){
+        String red = "#d82f44";
+        String green = "#19af55";
+        if (color.equals(green)) {
             System.out.print("Insights of " + heading + "for 5 Years" + "\nHigh " + high + "\nLow " + low + "\nChange +" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 5 Years", "High " + high + "<br>Low " + low + "<br>Change +" + change, STATUS.PASS, DriverAction.takeSnapShot());
 
-        }else if(color.equals(red)){
+        } else if (color.equals(red)) {
             System.out.print("Insights of " + heading + "for 5 years" + "\nHigh " + high + "\nLow " + low + "\nChange -" + change + "\n");
             GemTestReporter.addTestStep("Insights of " + heading + "for 5 Years", "High " + high + "<br>Low " + low + "<br>Change -" + change, STATUS.PASS, DriverAction.takeSnapShot());
         }

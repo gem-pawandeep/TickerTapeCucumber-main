@@ -12,12 +12,12 @@ Feature: TickerTapeHomepage
     Then Show the analytic for five year
 
     Examples:
-      | Stock    |
-      | TCS      |
-      | wipro    |
-      | niit     |
-      | sbin     |
-      | reliance |
+      | Stock |
+      | TCS   |
+      | wipro |
+      | niit  |
+
+
 
 
 
